@@ -39,8 +39,9 @@ function App(){
       <h2> Sample Data </h2>
       {(()=>{
       	for(var i in data){
-      	  // <Header name={data[i]} role={rolesData[i]}/>
-	   console.log(data[i])
+      	   //<Header name={data[i]} role={rolesData[i]}/>
+	   //console.log(data[i])
+	   //return <h2> {data[i] </h2>
       
       })()}
      

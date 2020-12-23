@@ -27,14 +27,23 @@ function App(){
 
 
 
-import React,{useState} from 'react'
+import React,{useState} from 'react';
 import './App.css';
 import Header from './Header';
+
 function App(){
+  var data=["Durga","Raja","Likhitha","Upendra","Vamsi"]
+  var rolesData=["S/w engineer","Testing engineer","Web developer","App developer",Ios developer"]
   return(
     <>
       <h2> Sample Data </h2>
-      <Header name="Likhitha" role="Fresher" />
+      {(()=>{
+      	for(var i in data){
+      	   <Header name={data[i]} role={rolesData[i]}/>
+	   
+      
+      }} 
+     
     </>
   )
 }
@@ -45,7 +54,8 @@ export default App;
      Header.js
 let Header=(props)=>{
   return {
-    
+  	<header>
+    		<h2> 
 
 
 
